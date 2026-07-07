@@ -1,23 +1,158 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>رزومه امیرمحمد سلیمی</title>
-<style>
-body { font-family: Tahoma, sans-serif; background-color: #1a1a2e; color: white; text-align: center; padding: 50px; }
-.card { background: #16213e; padding: 30px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3); display: inline-block; border: 1px solid #0f3460; }
-h1 { color: #e94560; }
-p { color: #c5c5c5; font-size: 1.1em; }
-.btn { display: inline-block; padding: 12px 25px; background-color: #e94560; color: white; text-decoration: none; border-radius: 8px; margin-top: 20px; transition: 0.3s; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرفی امیرمحمد سلیمی</title>
+    <style>
+        body {
+            font-family: 'Tahoma', 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.8;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px 80px 20px; /* فضای پایین را بیشتر کردم */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            padding-bottom: 15px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            object-fit: cover;
+            background-color: white;
+        }
+        /* این بخش باعث می‌شود عکس دقیقاً زیر اسم و در مرز هدر قرار بگیرد */
+        .img-wrapper {
+            text-align: center;
+            margin-top: -60px; 
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .info-item {
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            background: #e1f5fe;
+            color: #0277bd;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            border: 1px solid #b3e5fc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
 </head>
 <body>
-<div class="card">
-<h1>امیرمحمد سلیمی</h1>
-<p>دانشجوی مهندسی کامپیوتر</p>
-<p>به وب‌سایت شخصی من خوش آمدید!</p>
-<p>این سایت توسط گیت‌هاب میزبانی شده است.</p>
-<a href="#" class="btn">ارتباط با من</a>
-</div>
+
+    <header>
+        <h1>امیرمحمد سلیمی</h1>
+    </header>
+
+    <!-- عکس آواتار دقیقاً زیر اسم -->
+    <div class="img-wrapper">
+        <img src="https://www.w3schools.com/howto/img_avatar.png" alt="User Avatar" class="profile-img">
+    </div>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>اطلاعات شخصی</h2>
+            <div class="info-item">🎓 <strong>رشته:</strong> مهندسی کامپیوتر کارشناسی</div>
+            <div class="info-item">🏫 <strong>دانشگاه:</strong> محقق اردبیلی</div>
+            <div class="info-item">📍 <strong>متولد:</strong> تهران</div>
+        </div>
+
+        <div class="card">
+            <h2>مقطع تحصیلی</h2>
+            <div class="info-item">📚 <strong>وضعیت:</strong> کارشناسی ترم دو</div>
+        </div>
+
+        <div class="card">
+            <h2>ویژگی‌ها</h2>
+            <ul class="skills-list">
+                <li>حل مسئله</li>
+                <li>کار تیمی</li>
+                <li>زبان انگلیسی</li>
+                <li>برنامه نویسی و الگوریتم</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>حوزه مورد علاقه</h2>
+            <ul class="skills-list">
+                <li>هوش مصنوعی (AI)</li>
+                <li>برنامه‌نویسی وب</li>
+                <li>امنیت شبکه</li>
+                <li>توسعه نرم‌افزار</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>راه ارتباطی با من</h2>
+            <div class="info-item">📱 <strong>شماره تلفن:</strong> 09024825720</div>
+            <div class="info-item">📧 <strong>ایمیل:</strong> salimiamirmohammad5720@gmail.com</div>
+        </div>
+
+        <div class="card">
+            <h2>چرا این رشته را
+              انتخاب کردم؟</h2>
+            <p style="text-align: justify;">
+                متولدین نسل z وقتی چشمشان را باز کردند با یک وسیله جدید آشنا شدن که به تازگی درست شده بود اون هم چیزی نبود جز کامپیوتر از همون اول هم معلوم بود قرار است دنیا را تکان دهد همینطور هم شد و افراد زیادی به خود جذب کرد که یکی از اون ها هم من بودم برای من خیلی لذت بخش بود که بفهمم این مقدار برنامه چگونه ساخته میشود و ساختار آنها چگونه است. این یکی از دلایلی بود که منو به کامپیوتر متصل کرد و از کودکی نیز علاقه زیادی به دنیای دیجیتال داشتم و دنیای آینده دنیای دیجیتال است.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        طراحی شده توسط امیرمحمد سلیمی &copy; ۱۴۰۵
+    </footer>
+
 </body>
 </html>
+
+
+              
